@@ -7,42 +7,38 @@ A structured, hands-on reference for all major **data preprocessing and transfor
 ## 🗂️ Repository Structure
 
 ```
-data-preprocessing-ml/
+data-preprocessing/
 │
-├── 01_Feature_Scaling/
-│   ├── min_max_scaler.ipynb
-│   ├── standardization_zscore.ipynb
-│   ├── robust_scaler.ipynb
-│   ├── maxabs_scaler.ipynb
-│   └── normalizer_l1_l2.ipynb
+├── 01_Feature_Scaling.ipynb
+│   ├── min_max_scaler
+│   ├── standardization_zscore
+│   ├── robust_scaler
+│   ├── maxabs_scaler
+│   └── normalizer_l1_l2
 │
-├── 02_Distribution_Transforms/
-│   ├── log_transform.ipynb
-│   ├── square_root_transform.ipynb
-│   ├── box_cox_transform.ipynb
-│   ├── yeo_johnson_transform.ipynb
-│   ├── quantile_transform.ipynb
-│   ├── power_transform.ipynb
-│   └── reciprocal_transform.ipynb
+├── 02_Distribution_Transforms.ipynb
+│   ├── log_transform
+│   ├── square_root_transform
+│   ├── box_cox_transform
+│   ├── yeo_johnson_transform
+│   ├── quantile_transform
+│   └── reciprocal_transform
 │
-├── 03_Outlier_Handling/
-│   ├── winsorization_clipping.ipynb
-│   ├── zscore_outlier_removal.ipynb
-│   └── iqr_method.ipynb
+├── 03_Outlier_Handling.ipynb
+│   ├── winsorization_clipping
+│   ├── zscore_outlier_removal
+│   └── iqr_method
 │
-├── 04_Encoding_Techniques/
-│   ├── one_hot_encoding.ipynb
-│   ├── label_encoding.ipynb
-│   ├── ordinal_encoding.ipynb
-│   └── target_mean_encoding.ipynb
+├── 04_Encoding_Techniques.ipynb
+│   ├── one_hot_encoding
+│   ├── label_encoding
+│   ├── ordinal_encoding
+│   └── target_mean_encoding
 │
-├── 05_Missing_Value_Imputation/
-│   ├── mean_median_imputation.ipynb
-│   ├── knn_imputation.ipynb
-│   └── indicator_plus_impute.ipynb
-│
-├── 06_Full_Pipeline_Example/
-│   └── end_to_end_preprocessing.ipynb
+├── 05_Missing_Value_Imputation.ipynb
+│   ├── mean_median_imputation
+│   ├── knn_imputation
+│   └── indicator_plus_impute
 │
 └── README.md
 ```
@@ -70,7 +66,6 @@ data-preprocessing-ml/
 | Box-Cox | Right or Left ✅ | Auto-finds λ; positive values only |
 | Yeo-Johnson | Right or Left ✅ | Works with zeros and negatives |
 | Quantile Transform | Any distribution ✅ | Maps to uniform or normal; non-parametric |
-| Power Transform (x²) | Left skew ✅ | Amplifies outliers — use carefully |
 | Reciprocal (1/x) | Heavy right skew ✅ | Reverses order; x ≠ 0 required |
 
 ### 3 · Outlier Handling
